@@ -4,6 +4,8 @@ import (
 	"net/http"
 	"yutooaisdk/define"
 
+	"yutooaisdk/machinecode"
+
 	"github.com/gin-gonic/gin"
 )
 
@@ -37,7 +39,7 @@ func GetVersion(c *gin.Context) {
 		"identifyVersion":    "1.0.0.0",
 		"matchingVersion":    "1.0.0.0",
 		"cameraVersion":      "1.0.0.0",
-		"machineVersion":     "1.0.0.0",
+		"machineVersion":     machinecode.GetMachineCode(),
 		"identifySubVersion": "snack",
 	})
 }
