@@ -1,4 +1,4 @@
-module example.com/m/v2
+module yutooaisdk
 
 go 1.20
 
